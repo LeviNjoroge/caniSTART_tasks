@@ -1,23 +1,26 @@
 actor {
-
-  // let num1 : Int = 34;
-  // let num2 : Int = 56;
-  public query func acceptInput(number1 :Int, number2: Int) : async (){
-    let num1 = number1;
-    let num2 = number2;
-
-    func add() : async Int {
-      return num1 + num2;
-    };
-    func subtract() : async Int {
-      return num1 - num2;
-    };
-    func multiply() : async Int {
-      return num1 * num2;
-    };
-    func divide() : async Int {
-      return num1 / num2;
-    };
-
+  public func add(num1 : Int, num2 : Int) : async Int {
+    return num1 + num2;
   };
+  
+  public func subtract(num1 : Int, num2 : Int) : async Int {
+    return num1 - num2;
+  };
+  
+  public func multiply(num1 : Int, num2 : Int) : async Int {
+    return num1 * num2;
+  };
+  
+  public func divide(num1 : Int, num2 : Int) : async ?Int {
+    if (num2 == 0) {
+      return null;
+    } else {
+      return ?(num1 / num2);
+    };
+  };
+  
+  public func modulo(num1 : Int, num2 : Int) : async Int {
+    return num1 % num2;
+    };
+
 };
