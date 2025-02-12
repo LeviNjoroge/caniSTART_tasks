@@ -6,6 +6,8 @@ actor {
     let num1 = number1;
     let num2 = number2;
 
-    
+    func add() : async Int {
+      return num1 + num2;
+    };
   };
 };
