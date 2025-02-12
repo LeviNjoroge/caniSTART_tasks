@@ -9,5 +9,15 @@ actor {
     func add() : async Int {
       return num1 + num2;
     };
+    func subtract() : async Int {
+      return num1 - num2;
+    };
+    func multiply() : async Int {
+      return num1 * num2;
+    };
+    func divide() : async Int {
+      return num1 / num2;
+    };
+
   };
 };
