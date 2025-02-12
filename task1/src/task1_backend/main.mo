@@ -8,5 +8,12 @@ actor {
     return num1 + num2;
   };
 
+  // function to add two numbers
+  public query func addition1(number1 :Int, number2: Int) : async Int{
+    return number1 + number2;
+  };
+
+  
+
   // function to subtract two numbers
 };
