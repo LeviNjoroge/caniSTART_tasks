@@ -1,0 +1,16 @@
+{
+  "canisters": {
+    "Week3_1_backend": {
+      "main": "src/Week3_1_backend/main.mo",
+      "type": "motoko"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
